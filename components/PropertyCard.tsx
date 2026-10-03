@@ -1,0 +1,5 @@
+import Link from 'next/link';
+import Image from 'next/image';
+import type { Property } from '@/lib/property-schema';
+import { formatPrice } from '@/lib/property-schema';
+export function PropertyCard({property:p}:{property:Property}){return <article className="property-card"><Link href={`/properties/${p.id}`} className="property-image">{p.images[0]?<Image src={p.images[0].src} alt={p.images[0].alt} width={800} height={520}/>:<span className="image-placeholder">Photographs to follow</span>}{p.demo&&<span className="demo-label">Preview example · not a listing</span>}</Link><div className="property-card-content"><div className="card-meta"><span>{p.area}</span><span>{p.demo?'Example':p.status}</span></div><h2><Link href={`/properties/${p.id}`}>{p.title}</Link></h2><p className="price">{formatPrice(p)}</p><p>{p.propertyType}{p.bedrooms!==null&&` · ${p.bedrooms} bedrooms`}{p.bathrooms!==null&&` · ${p.bathrooms} bathroom${p.bathrooms===1?'':'s'}`}</p><p>{p.summary}</p><Link className="text-link" href={`/properties/${p.id}`}>View property details</Link></div></article>}

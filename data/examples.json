@@ -1,0 +1,116 @@
+[
+  {
+    "published": false,
+    "title": "Example two-bedroom home",
+    "category": "rent",
+    "area": "Oldham",
+    "postcode": "",
+    "propertyType": "Example home",
+    "price": 950,
+    "priceUnit": "pcm",
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "status": "Available",
+    "summary": "Fictional preview example to demonstrate the property layout. Not available to let or buy.",
+    "description": [
+      "This fictional example shows how a completed property listing will look. All details and prices are illustrative. It is not an advertised property.",
+      "Replace draft records in data/properties.json with verified details and original photographs before publishing."
+    ],
+    "features": [
+      "Example feature one",
+      "Example feature two",
+      "Illustrative photograph only"
+    ],
+    "images": [
+      {
+        "src": "/images/brand-home.png",
+        "alt": "Illustrative red-brick home, not a photograph of an advertised property"
+      }
+    ],
+    "deposit": null,
+    "councilTax": "",
+    "epc": "",
+    "tenure": "",
+    "furnishing": "",
+    "availableDate": "",
+    "materialInformation": "Fictional preview only. Not a real property listing.",
+    "id": "preview-rental",
+    "demo": true
+  },
+  {
+    "published": false,
+    "title": "Example family home",
+    "category": "sale",
+    "area": "Chadderton",
+    "postcode": "",
+    "propertyType": "Example home",
+    "price": 245000,
+    "priceUnit": "purchase",
+    "bedrooms": 3,
+    "bathrooms": 1,
+    "status": "Available",
+    "summary": "Fictional preview example to demonstrate the property layout. Not available to let or buy.",
+    "description": [
+      "This fictional example shows how a completed property listing will look. All details and prices are illustrative. It is not an advertised property.",
+      "Replace draft records in data/properties.json with verified details and original photographs before publishing."
+    ],
+    "features": [
+      "Example feature one",
+      "Example feature two",
+      "Illustrative photograph only"
+    ],
+    "images": [
+      {
+        "src": "/images/brand-home.png",
+        "alt": "Illustrative red-brick home, not a photograph of an advertised property"
+      }
+    ],
+    "deposit": null,
+    "councilTax": "",
+    "epc": "",
+    "tenure": "",
+    "furnishing": "",
+    "availableDate": "",
+    "materialInformation": "Fictional preview only. Not a real property listing.",
+    "id": "preview-sale",
+    "demo": true
+  },
+  {
+    "published": false,
+    "title": "Example commercial space",
+    "category": "commercial",
+    "area": "Royton",
+    "postcode": "",
+    "propertyType": "Example premises",
+    "price": 12000,
+    "priceUnit": "pa",
+    "bedrooms": null,
+    "bathrooms": null,
+    "status": "Available",
+    "summary": "Fictional preview example to demonstrate the property layout. Not available to let or buy.",
+    "description": [
+      "This fictional example shows how a completed property listing will look. All details and prices are illustrative. It is not an advertised property.",
+      "Replace draft records in data/properties.json with verified details and original photographs before publishing."
+    ],
+    "features": [
+      "Example feature one",
+      "Example feature two",
+      "Illustrative photograph only"
+    ],
+    "images": [
+      {
+        "src": "/images/brand-home.png",
+        "alt": "Illustrative red-brick home, not a photograph of an advertised property"
+      }
+    ],
+    "deposit": null,
+    "councilTax": "",
+    "epc": "",
+    "tenure": "",
+    "furnishing": "",
+    "availableDate": "",
+    "materialInformation": "Fictional preview only. Not a real property listing.",
+    "id": "preview-commercial",
+    "demo": true
+  }
+]

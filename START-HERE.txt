@@ -1,0 +1,38 @@
+ABS PROPERTIES — NEW LAPTOP SETUP (2 OCTOBER 2026)
+
+FIRST SETUP
+1. Download this ZIP. Right-click it and choose Extract All.
+2. Install Node.js 24 LTS if it is not installed. Restart VS Code after installing Node.
+3. In VS Code, select File > Open Folder and choose the extracted abs-properties folder.
+4. Select Terminal > New Terminal. Check the terminal is in abs-properties.
+5. Run: npm.cmd ci
+6. Run: Copy-Item .env.example .env.local
+   Do this only for a fresh setup. Do not overwrite an existing .env.local with your email keys.
+7. Run: npm.cmd run dev
+8. Wait for Ready, then open http://localhost:3000
+9. Open http://localhost:3000/properties/abs-001 to see Abbeyhills Road.
+
+QUICK ALTERNATIVE
+After Node.js is installed, double-click SETUP-WINDOWS.cmd inside abs-properties.
+It installs packages, creates .env.local if needed and starts the website.
+
+REOPENING THE WEBSITE
+Run npm.cmd run dev in the project terminal, or double-click START-WEBSITE.cmd.
+Keep the terminal open while viewing the website. Press Ctrl+C to stop it.
+
+RESTORE THE ABBEYHILLS PHOTOS
+The original photos were on your old laptop and are not in this ZIP.
+Copy ah1.png, ah2.png, ah3.png, ah4.png (or ah4..png), ah5.png, ah6.png,
+ah7.png and ah8.png from your old laptop or backup into public/images.
+Stop the server with Ctrl+C, then run npm.cmd run dev again.
+It adds the copied photos automatically. Use Next or the thumbnails to view them.
+Until you restore them, the page says Photographs to follow.
+
+WHAT HAS BEEN RESTORED
+Abbeyhills Road: £1,200 pcm, house, 3 bedrooms, 1 bathroom, unfurnished,
+available October 2026. The carousel and draft preview are included.
+Only OL8 was recorded in chat: add the full postcode again.
+Deposit, Council Tax, EPC and exact availability date still need confirming.
+14 records, 0 published is expected. This download is a local preview,
+not a live deployment. Email forms need your email-provider configuration.
+Read README.md for checks and launch setup.

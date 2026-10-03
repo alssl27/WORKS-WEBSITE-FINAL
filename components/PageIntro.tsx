@@ -1,0 +1,1 @@
+export function PageIntro({title,children}:{title:string;children?:React.ReactNode}){return <section className="page-intro"><div className="container"><h1>{title}</h1>{children&&<div className="intro-copy">{children}</div>}</div></section>}

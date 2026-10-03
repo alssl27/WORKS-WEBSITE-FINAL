@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function NotFound(){return <div className="container section empty-state"><h1>We couldn’t find that page.</h1><p>The property or page may have moved. Browse current listings or contact our team.</p><div className="button-row"><Link href="/properties" className="button">Browse properties</Link><Link href="/" className="button outline">Return home</Link></div></div>}
