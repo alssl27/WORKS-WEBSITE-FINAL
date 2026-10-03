@@ -78,14 +78,14 @@ The API route accepts only same-origin JSON requests. In production, set a corre
 1. Import this project into the ABS Properties Vercel account.
 2. Use the default Next.js build settings. The build command is `npm run build`.
 3. Add these environment variables to the Vercel Production environment:
-   - `NEXT_PUBLIC_SITE_URL=https://www.abs-properties.co.uk`
+   - `NEXT_PUBLIC_SITE_URL=https://www.absproperties.uk`
    - `SHOW_DEMO_LISTINGS=false`
    - `RESEND_API_KEY`
    - `ENQUIRY_FROM`
    - `ENQUIRY_TO=info@abs-properties.co.uk`
    - `NEXT_PUBLIC_TURNSTILE_SITE_KEY`
    - `TURNSTILE_SECRET_KEY`
-4. Add `www.abs-properties.co.uk` and the root domain in Vercel, then follow the DNS records Vercel provides.
+4. Add `www.absproperties.uk` and the root domain in Vercel, then follow the DNS records Vercel provides.
 5. Verify the domain in Resend and create the Cloudflare Turnstile widget for the final production hostname.
 6. Redeploy after adding the environment variables, then test the homepage, property search, brochure download and enquiry fallback links.
 
@@ -95,4 +95,4 @@ Keep API keys and Turnstile secrets in Vercel environment variables only. Do not
 
 Before publishing, replace the illustrative home image and complete each listing with approved photographs and verified information; review the privacy notice, cookie statement and service descriptions; confirm the legal business identity and email handling; configure domain hosting, email delivery, Turnstile and analytics only if needed; test real forms and mobile layouts; and agree the production domain/DNS changes. The later staff login and authorised Zoopla connection remain a separate phase as agreed.
 
-The source code does not itself publish to `www.abs-properties.co.uk`. Connect the finished project to an authorised hosting account and configure the domain when the company account and launch credentials are available.
+The source code does not itself publish to `www.absproperties.uk`. Connect the finished project to an authorised hosting account and configure the domain when the company account and launch credentials are available.
