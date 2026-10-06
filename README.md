@@ -51,7 +51,7 @@ To check the records, run `npm.cmd run check:properties`. Missing images, duplic
 - WhatsApp, phone, email and map links. Social links are omitted until ABS supplies its real profile addresses.
 - Oldham, Chadderton and Royton area guides linked to council, Bee Network and NHS sources.
 - Privacy, cookies and accessibility information; sitemap; basic search metadata; keyboard focus styles.
-- A disabled staff administration route explaining the planned later phase. There is no pretend login or exposed staff management system.
+- A local-demo staff administration workflow at `/admin/login`, with a protected dashboard and add/edit/delete listing tools. It uses the JSON data file for local demonstrations and is not a production authentication or database solution.
 - An email API route with server-side input validation, size limits, same-origin checks, a spam honeypot, development rate limits, production Turnstile verification and provider-confirmed success. The Resend idempotency key prevents duplicate mail retries.
 
 ## Set up email before enabling forms
@@ -96,3 +96,13 @@ Keep API keys and Turnstile secrets in Vercel environment variables only. Do not
 Before publishing, replace the illustrative home image and complete each listing with approved photographs and verified information; review the privacy notice, cookie statement and service descriptions; confirm the legal business identity and email handling; configure domain hosting, email delivery, Turnstile and analytics only if needed; test real forms and mobile layouts; and agree the production domain/DNS changes. The later staff login and authorised Zoopla connection remain a separate phase as agreed.
 
 The source code does not itself publish to `www.absproperties.uk`. Connect the finished project to an authorised hosting account and configure the domain when the company account and launch credentials are available.
+
+## Local admin demonstration
+
+The demo admin is available at `http://localhost:3000/admin/login`. Configure
+`ADMIN_EMAIL`, `ADMIN_PASSWORD` and `ADMIN_SESSION_SECRET` in `.env.local`
+before using it. The example file contains non-production defaults for a quick
+local walkthrough; replace them with local-only values. Listing changes are
+written to `data/properties.json` so they persist during the demo, but this
+file-backed workflow must be replaced with a managed database and production
+identity provider before deployment.

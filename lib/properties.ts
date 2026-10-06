@@ -1,12 +1,12 @@
 import 'server-only';
-import raw from '@/data/properties.json';
 import examples from '@/data/examples.json';
 import { propertySchema } from './property-schema';
+import { readAllProperties } from './admin-properties';
 export function previewEnabled() {
   return process.env.NODE_ENV !== 'production' && process.env.SHOW_DEMO_LISTINGS !== 'false';
 }
-export function getProperties() {
-  const records = propertySchema.array().parse(raw);
+export async function getProperties() {
+  const records = await readAllProperties();
   const published = records.filter(p => p.published && !p.demo);
   if (previewEnabled()) {
     const drafts = records.filter(p => p.id === 'abs-001' && !p.published);
@@ -14,4 +14,4 @@ export function getProperties() {
   }
   return published;
 }
-export function getProperty(id: string) { return getProperties().find(p=>p.id===id); }
+export async function getProperty(id: string) { return (await getProperties()).find(p=>p.id===id); }
