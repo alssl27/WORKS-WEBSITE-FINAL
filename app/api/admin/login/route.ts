@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
-import { createSession, isValidAdminCredentials, sessionCookieName, sessionCookieOptions } from '@/lib/admin-auth';
+import { adminDemoEnabled, createSession, isValidAdminCredentials, sessionCookieName, sessionCookieOptions } from '@/lib/admin-auth';
 export async function POST(request: Request) {
+  if (!adminDemoEnabled) return NextResponse.json({ error: 'The local demo admin is disabled in production.' }, { status: 404 });
   const body = await request.json().catch(() => ({}));
   const email = String(body.email || ''), password = String(body.password || '');
   if (!email || !password) return NextResponse.json({ error: 'Enter your email and password.' }, { status: 400 });

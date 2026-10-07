@@ -4,6 +4,7 @@ import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
 
 const COOKIE = 'abs_admin_session';
+export const adminDemoEnabled = process.env.NODE_ENV !== 'production' && process.env.ADMIN_DEMO_ENABLED !== 'false';
 const secret = () => process.env.ADMIN_SESSION_SECRET || 'local-demo-secret-change-me';
 const credentials = () => ({
   email: (process.env.ADMIN_EMAIL || 'admin@example.com').toLowerCase(),
@@ -14,6 +15,7 @@ function sign(value: string) {
   return createHmac('sha256', secret()).update(value).digest('base64url');
 }
 export function isValidAdminCredentials(email: string, password: string) {
+  if (!adminDemoEnabled) return false;
   const expected = credentials();
   return email.trim().toLowerCase() === expected.email && password === expected.password;
 }
@@ -33,6 +35,7 @@ export function verifySession(value?: string) {
   } catch { return false; }
 }
 export async function isAdmin() {
+  if (!adminDemoEnabled) return false;
   return verifySession((await cookies()).get(COOKIE)?.value);
 }
 export async function requireAdmin() {
