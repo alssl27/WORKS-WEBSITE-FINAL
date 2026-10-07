@@ -149,28 +149,77 @@
     "id": "abs-002"
   },
   {
-    "published": false,
-    "title": "Draft property 03",
+    "published": true,
+    "title": "Retford Street, Oldham",
     "category": "rent",
     "area": "Oldham",
-    "postcode": "",
-    "propertyType": "To confirm",
-    "price": null,
+    "postcode": "OL8",
+    "propertyType": "Terrace",
+    "price": 800,
     "priceUnit": "pcm",
-    "bedrooms": null,
-    "bathrooms": null,
-    "status": "Draft",
-    "summary": "",
-    "description": [],
-    "features": [],
-    "images": [],
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "status": "Available",
+    "summary": "Two-bedroom terraced house on Retford Street, Oldham, available to rent at £800 per calendar month.",
+    "description": [
+      "ABS Properties are pleased to offer this two-bedroom terraced house on Retford Street, Oldham.",
+      "The property includes a bright living room, fitted kitchen, two bedrooms, a family bathroom and a private rear yard.",
+      "Available to rent at £800 per calendar month. Contact ABS Properties to arrange a viewing."
+    ],
+    "features": [
+      "Two bedrooms",
+      "Terraced house",
+      "Family bathroom",
+      "Fitted kitchen",
+      "Private rear yard",
+      "Retford Street, Oldham OL8",
+      "£800 pcm"
+    ],
+    "images": [
+      {
+        "src": "/images/retford-exterior.png",
+        "alt": "Red-brick terraced houses on Retford Street"
+      },
+      {
+        "src": "/images/retford-living-room.png",
+        "alt": "Bright living room with laminate flooring and sofas"
+      },
+      {
+        "src": "/images/retford-kitchen.png",
+        "alt": "Fitted kitchen with cream cabinets and black worktops"
+      },
+      {
+        "src": "/images/retford-stairs.png",
+        "alt": "Carpeted staircase leading to the first floor"
+      },
+      {
+        "src": "/images/retford-bedroom-1.png",
+        "alt": "Spacious first bedroom with grey carpet"
+      },
+      {
+        "src": "/images/retford-bedroom-2.png",
+        "alt": "Second bedroom with grey carpet and window"
+      },
+      {
+        "src": "/images/retford-bathroom.png",
+        "alt": "Family bathroom with bath, shower, basin and toilet"
+      },
+      {
+        "src": "/images/retford-yard.png",
+        "alt": "Private paved rear yard enclosed by brick walls"
+      },
+      {
+        "src": "/images/retford-street.png",
+        "alt": "Street view of the red-brick terraced properties"
+      }
+    ],
     "deposit": null,
-    "councilTax": "",
-    "epc": "",
+    "councilTax": "Ask agent",
+    "epc": "Ask agent",
     "tenure": "",
-    "furnishing": "",
-    "availableDate": "",
-    "materialInformation": "",
+    "furnishing": "Unfurnished",
+    "availableDate": "To be confirmed",
+    "materialInformation": "Rent: £800 per calendar month. Deposit, council tax band and EPC rating to be confirmed by the agent. Furnishing and availability date to be confirmed. Retford Street, Oldham OL8. Further information is available from ABS Properties.",
     "id": "abs-003"
   },
   {
