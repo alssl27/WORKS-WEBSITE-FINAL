@@ -59,28 +59,93 @@
     "id": "abs-001"
   },
   {
-    "published": false,
-    "title": "Draft property 02",
+    "published": true,
+    "title": "Fairfields, Oldham",
     "category": "rent",
     "area": "Oldham",
-    "postcode": "",
-    "propertyType": "To confirm",
-    "price": null,
+    "postcode": "OL8",
+    "propertyType": "Bungalow",
+    "price": 1350,
     "priceUnit": "pcm",
-    "bedrooms": null,
-    "bathrooms": null,
-    "status": "Draft",
-    "summary": "",
-    "description": [],
-    "features": [],
-    "images": [],
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "status": "Available",
+    "summary": "Three-bedroom bungalow in the Fairfields area of Oldham, available to rent at £1,350 per calendar month.",
+    "description": [
+      "ABS Properties are pleased to offer this three-bedroom bungalow in the Fairfields area of Oldham.",
+      "The property offers well-proportioned rooms, a fitted kitchen, two bathrooms and access to a rear garden.",
+      "The property is available to rent at £1,350 per calendar month. Contact ABS Properties to arrange a viewing."
+    ],
+    "features": [
+      "Three bedrooms",
+      "Bungalow",
+      "Two bathrooms",
+      "Fitted kitchen",
+      "Rear garden",
+      "Fairfields, Oldham OL8",
+      "£1,350 pcm"
+    ],
+    "images": [
+      {
+        "src": "/images/fairfields-exterior.png",
+        "alt": "Front exterior of the Fairfields bungalow with lawn and driveway"
+      },
+      {
+        "src": "/images/fairfields-kitchen-1.png",
+        "alt": "Fitted kitchen with cream cabinets, oven and tiled floor"
+      },
+      {
+        "src": "/images/fairfields-kitchen-2.png",
+        "alt": "Second view of the fitted kitchen with worktops and appliances"
+      },
+      {
+        "src": "/images/fairfields-bedroom-1.png",
+        "alt": "Bright double bedroom with grey carpet and front-facing window"
+      },
+      {
+        "src": "/images/fairfields-bedroom-2.png",
+        "alt": "Bedroom with fitted storage cupboards and grey carpet"
+      },
+      {
+        "src": "/images/fairfields-bedroom-3.png",
+        "alt": "Bright bedroom with grey carpet and garden-facing window"
+      },
+      {
+        "src": "/images/fairfields-bedroom-4.png",
+        "alt": "Additional bedroom with fitted storage and desk space"
+      },
+      {
+        "src": "/images/fairfields-garden.png",
+        "alt": "Rear garden with lawn, borders and greenhouse"
+      },
+      {
+        "src": "/images/fairfields-bathroom-1.png",
+        "alt": "Family bathroom with bath, shower, basin and toilet"
+      },
+      {
+        "src": "/images/fairfields-bathroom-2.png",
+        "alt": "Additional bathroom with bath, basin and toilet"
+      },
+      {
+        "src": "/images/fairfields-hallway.png",
+        "alt": "Hallway with grey carpet and doors to the rooms"
+      },
+      {
+        "src": "/images/fairfields-dining-room.png",
+        "alt": "Dining room with wooden dining table and garden view"
+      },
+      {
+        "src": "/images/fairfields-storage.png",
+        "alt": "Storage area and hallway beside the staircase"
+      }
+    ],
     "deposit": null,
-    "councilTax": "",
-    "epc": "",
+    "councilTax": "Ask agent",
+    "epc": "Ask agent",
     "tenure": "",
-    "furnishing": "",
-    "availableDate": "",
-    "materialInformation": "",
+    "furnishing": "Unfurnished",
+    "availableDate": "To be confirmed",
+    "materialInformation": "Rent: £1,350 per calendar month. Deposit, council tax band and EPC rating to be confirmed by the agent. Unfurnished. Fairfields area, Oldham OL8. Further information is available from ABS Properties.",
     "id": "abs-002"
   },
   {

@@ -5,9 +5,9 @@ const raw=JSON.parse(fs.readFileSync('data/properties.json','utf8'));
 const samples=JSON.parse(fs.readFileSync('data/examples.json','utf8'));
 import {filterProperties,propertySchema,formatPrice} from '../lib/property-schema.ts';
 
-test('all fourteen editable records validate with the approved Abbeyhills listing published',()=>{
+test('all fourteen editable records validate with the published rental listings',()=>{
   const records=propertySchema.array().parse(raw);
-  assert.equal(records.length,14);assert.equal(records.filter(p=>p.published).length,1);
+  assert.equal(records.length,14);assert.equal(records.filter(p=>p.published).length,2);
   assert.equal(records.find(p=>p.id==='abs-001')?.status,'Available');
   assert.equal(records.filter(p=>p.category==='rent').length,10);
   assert.equal(records.filter(p=>p.category==='commercial').length,3);
