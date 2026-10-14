@@ -223,29 +223,67 @@
     "id": "abs-003"
   },
   {
-    "published": false,
-    "title": "Draft property 04",
+    "id": "abs-004",
+    "published": true,
+    "title": "Roundthorn Road, Oldham",
     "category": "rent",
     "area": "Oldham",
-    "postcode": "",
-    "propertyType": "To confirm",
-    "price": null,
+    "postcode": "OL4",
+    "propertyType": "House",
+    "price": 1500,
     "priceUnit": "pcm",
-    "bedrooms": null,
+    "bedrooms": 4,
     "bathrooms": null,
-    "status": "Draft",
-    "summary": "",
-    "description": [],
-    "features": [],
-    "images": [],
+    "status": "Available",
+    "summary": "Four-bedroom house to let on Roundthorn Road, Oldham, at £1,500 per calendar month.",
+    "description": [
+      "ABS Properties offers this four-bedroom house to let on Roundthorn Road, Oldham.",
+      "Rent is £1,500 per calendar month. The supplied photographs show the front exterior, living and dining rooms, kitchen, bedrooms and bathroom.",
+      "Contact ABS Properties to confirm availability, tenancy details and arrange a viewing."
+    ],
+    "features": [
+      "Four bedrooms",
+      "House to let",
+      "Roundthorn Road, Oldham",
+      "£1,500 pcm"
+    ],
+    "images": [
+      {
+        "src": "/images/roundthorn-exterior.png",
+        "alt": "Front exterior of the red-brick house on Roundthorn Road, Oldham"
+      },
+      {
+        "src": "/images/roundthorn-living-room.png",
+        "alt": "Living room with a front window and patterned feature wall"
+      },
+      {
+        "src": "/images/roundthorn-dining-room.png",
+        "alt": "Dining room with a window and round dining table"
+      },
+      {
+        "src": "/images/roundthorn-kitchen.png",
+        "alt": "Kitchen with fitted cabinets, gas cooker and window"
+      },
+      {
+        "src": "/images/roundthorn-bedroom-1.png",
+        "alt": "Carpeted bedroom with white walls and doorway to the landing"
+      },
+      {
+        "src": "/images/roundthorn-bedroom-2.png",
+        "alt": "Bedroom with a window and single bed"
+      },
+      {
+        "src": "/images/roundthorn-bathroom.png",
+        "alt": "Tiled bathroom with bath, shower, basin and toilet"
+      }
+    ],
     "deposit": null,
     "councilTax": "",
     "epc": "",
     "tenure": "",
     "furnishing": "",
     "availableDate": "",
-    "materialInformation": "",
-    "id": "abs-004"
+    "materialInformation": "Rent: £1,500 per calendar month. Postcode district: OL4; full postcode available from the agent. Deposit, availability date, furnishing, bathroom count, Council Tax band and EPC rating are awaiting confirmation. Please contact ABS Properties for these details and any further property information."
   },
   {
     "published": false,
