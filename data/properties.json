@@ -534,5 +534,78 @@
     "availableDate": "",
     "materialInformation": "",
     "id": "abs-014"
+  },
+  {
+    "id": "abs-015",
+    "published": true,
+    "title": "Kelverlow Street, Oldham",
+    "category": "rent",
+    "area": "Oldham",
+    "postcode": "OL4",
+    "propertyType": "Terrace",
+    "price": 800,
+    "priceUnit": "pcm",
+    "bedrooms": 2,
+    "bathrooms": null,
+    "status": "Available",
+    "summary": "Two-bedroom terraced house on Kelverlow Street, Oldham OL4, to rent at £800 per calendar month.",
+    "description": [
+      "A two-bedroom terraced house on Kelverlow Street in Oldham, OL4, offered to rent at £800 per calendar month.",
+      "Browse the gallery for views of the exterior, living room, kitchen, bedroom and bathroom. Contact ABS Properties for further details or to arrange a viewing."
+    ],
+    "features": ["Two bedrooms", "Terraced house", "Kelverlow Street, Oldham OL4", "£800 per calendar month"],
+    "images": [
+      {"src": "/images/kelverlow-exterior.png", "alt": "Red-brick exterior of the Kelverlow Street terraced house"},
+      {"src": "/images/kelverlow-living-room.png", "alt": "Living room at the Kelverlow Street property"},
+      {"src": "/images/kelverlow-kitchen.png", "alt": "Kitchen at the Kelverlow Street property"},
+      {"src": "/images/kelverlow-bedroom.png", "alt": "Bedroom at the Kelverlow Street property"},
+      {"src": "/images/kelverlow-bathroom.png", "alt": "Bathroom at the Kelverlow Street property"}
+    ],
+    "deposit": null,
+    "councilTax": "To be confirmed",
+    "epc": "To be confirmed",
+    "tenure": "",
+    "furnishing": "To be confirmed",
+    "availableDate": "To be confirmed",
+    "materialInformation": "Full postcode, deposit, council tax band, EPC rating, furnishing, availability date and other material information are to be confirmed. Contact ABS Properties for details."
+  }
+  ,{
+    "id": "abs-016",
+    "published": true,
+    "title": "Shelley Road, Oldham",
+    "category": "rent",
+    "area": "Oldham",
+    "postcode": "OL9",
+    "propertyType": "Semi-detached",
+    "price": 1100,
+    "priceUnit": "pcm",
+    "bedrooms": 3,
+    "bathrooms": null,
+    "status": "Available",
+    "summary": "Three-bedroom semi-detached house on Shelley Road, Oldham OL9, to rent at £1,100 per calendar month.",
+    "description": [
+      "A three-bedroom semi-detached house on Shelley Road in Oldham, OL9, offered to rent at £1,100 per calendar month.",
+      "Browse the gallery for views of the exterior, living room, kitchen, downstairs bathroom, bedrooms, landing and rear garden. Contact ABS Properties for further details or to arrange a viewing."
+    ],
+    "features": ["Three bedrooms", "Semi-detached house", "Shelley Road, Oldham OL9", "£1,100 per calendar month"],
+    "images": [
+      {"src": "/images/shelley-exterior.png", "alt": "Front exterior and garden of the Shelley Road property"},
+      {"src": "/images/shelley-entrance.png", "alt": "Front entrance at the Shelley Road property"},
+      {"src": "/images/shelley-living-room.png", "alt": "Living room at the Shelley Road property"},
+      {"src": "/images/shelley-kitchen.webp", "alt": "Kitchen at the Shelley Road property"},
+      {"src": "/images/shelley-bathroom.webp", "alt": "Downstairs bathroom at the Shelley Road property"},
+      {"src": "/images/shelley-bedroom-1.webp", "alt": "First bedroom at the Shelley Road property"},
+      {"src": "/images/shelley-bedroom-2.png", "alt": "Second bedroom at the Shelley Road property"},
+      {"src": "/images/shelley-bedroom-3.png", "alt": "Third bedroom at the Shelley Road property"},
+      {"src": "/images/shelley-landing.png", "alt": "Landing at the Shelley Road property"},
+      {"src": "/images/shelley-garden.png", "alt": "Rear garden at the Shelley Road property"}
+    ],
+    "deposit": null,
+    "councilTax": "To be confirmed",
+    "epc": "To be confirmed",
+    "tenure": "",
+    "furnishing": "To be confirmed",
+    "availableDate": "To be confirmed",
+    "materialInformation": "Full postcode, deposit, council tax band, EPC rating, furnishing, availability date and other material information are to be confirmed. Contact ABS Properties for details."
   }
 ]

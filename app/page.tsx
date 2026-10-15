@@ -15,10 +15,9 @@ export default async function Home() {
   const featured = (await getProperties()).filter(p => p.published && !p.demo).slice(0, 4);
   return <>
     <section className="hero" aria-labelledby="hero-title">
-      <div className="hero-media"><Image src="/images/abs-townhouse-hero.png" alt="Victorian red-brick townhouse with an ABS Properties sign" fill sizes="100vw" preload/><div className="hero-overlay"/></div>
+      <div className="hero-media"><Image src="/images/abs-family-home-hero.png" alt="Family approaching a modern home beside an ABS Properties sign" fill sizes="100vw" preload/><div className="hero-overlay"/></div>
       <div className="hero-copy">
-        <p className="eyebrow">Independent estate agents</p>
-        <h1 id="hero-title">Property, handled<br/><em>properly.</em></h1>
+        <h1 id="hero-title">Your property,<br/><em>our priority.</em></h1>
         <p>Honest advice, local expertise and complete care for your home —<br className="desktop-break"/> whether you&apos;re selling, letting or looking.</p>
         <div className="button-row hero-actions"><Link href="/landlords/tools" className="button">Landlord tools <span aria-hidden="true">↗</span></Link><a href="/downloads/abs-properties-landlord-brochure.pdf" download className="button outline light">Download property management brochure <span aria-hidden="true">↓</span></a></div>
       </div>
