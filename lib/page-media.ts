@@ -14,9 +14,9 @@ export const pageMedia = {
 } satisfies Record<string,PageImage>;
 
 export const serviceMedia:Record<string,PageImage> = {
-  lettings:pageMedia.living,
-  management:pageMedia.kitchen,
+  lettings:pageMedia.welcomingFamily,
+  management:pageMedia.family,
   sales:pageMedia.townCentre,
   commercial:pageMedia.home,
-  investments:pageMedia.street,
+  investments:pageMedia.townCentre,
 };
