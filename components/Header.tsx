@@ -38,7 +38,7 @@ function NavigationLinks({onNavigate}: {onNavigate: () => void}) {
   return navigationGroups.map(group => {
     const groupActive = group.links.some(link => pathname === link.href.split(/[?#]/)[0]);
     return <details className="navigation-group" key={group.label}>
-      <summary aria-current={groupActive ? 'page' : undefined}>{group.label}<span aria-hidden="true">⌄</span></summary>
+      <summary aria-current={groupActive ? 'page' : undefined}>{group.label}</summary>
       <div className="navigation-dropdown">
         {group.links.map(link => {
           const [pathAndQuery] = link.href.split('#');
