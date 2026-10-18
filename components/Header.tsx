@@ -76,6 +76,7 @@ export function Header() {
     <button ref={toggleRef} className="menu-toggle" type="button" aria-expanded={open} aria-controls="main-navigation" onClick={() => setOpen(value => !value)}><span className="sr-only">{open ? 'Close' : 'Open'} main menu</span><span aria-hidden="true">{open ? 'Close ×' : 'Menu ☰'}</span></button>
     <nav id="main-navigation" aria-label="Main navigation" className={`navigation${open ? ' open' : ''}`}>
       <Suspense fallback={navigationGroups.map(group => <span className="navigation-fallback" key={group.label}>{group.label}</span>)}><NavigationLinks onNavigate={close}/></Suspense>
+      <Link href="/valuation" className="button header-valuation" onClick={close}>Value my property <span aria-hidden="true">›</span></Link>
     </nav>
   </div></header>;
 }
