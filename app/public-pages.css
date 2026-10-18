@@ -98,6 +98,7 @@ body{font-weight:400;letter-spacing:-.008em;line-height:1.6}
 .button,.site-header .navigation-group summary,.site-header .navigation-fallback{font-weight:650;letter-spacing:.045em}
 .site-header .navigation-dropdown a{font-weight:520;letter-spacing:-.005em}
 .site-header .header-logo{gap:0}
-.site-header .header-logo span{font-family:Arial,Helvetica,sans-serif;font-weight:900;letter-spacing:.1em}
+.site-header .header-logo span{font-family:var(--font-geist),"Segoe UI",Arial,sans-serif;font-size:21px;font-weight:600;letter-spacing:.12em}
 .site-header .navigation-group summary,.site-header .navigation-fallback{letter-spacing:.1em}
 .site-header .navigation-dropdown a{letter-spacing:.025em}
+@media(max-width:820px){.site-header .header-logo span{font-size:16px}}
