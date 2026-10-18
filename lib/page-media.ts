@@ -10,6 +10,7 @@ export const pageMedia = {
   bungalow: {src:'/images/fairfields-exterior.png',alt:'Front garden and exterior of our Fairfields bungalow in Oldham'},
   street: {src:'/images/retford-street.png',alt:'Terraced houses on Retford Street in Oldham',caption:'Homes from our Oldham property portfolio.'},
   townCentre: {src:'/images/oldham-town-centre-golden-hour.png',alt:'Oldham town centre and surrounding skyline at golden hour'},
+  welcomingFamily: {src:'/images/welcoming-family-home-to-let.png',alt:'Family arriving at a welcoming home beside an ABS Properties To Let sign'},
 } satisfies Record<string,PageImage>;
 
 export const serviceMedia:Record<string,PageImage> = {
