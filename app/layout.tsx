@@ -30,7 +30,10 @@ export const metadata: Metadata = {
     'Greater Manchester estate agents',
     'ABS Properties',
   ],
-  alternates: { canonical: '/' },
+  icons: {
+    icon: '/images/abs-properties-logo.png',
+    apple: '/images/abs-properties-logo.png',
+  },
   openGraph: {
     title: 'ABS Properties',
     description: 'Sales, lettings and property management in Oldham and Greater Manchester.',
@@ -38,11 +41,13 @@ export const metadata: Metadata = {
     siteName: 'ABS Properties',
     locale: 'en_GB',
     type: 'website',
+    images: [{url: '/images/abs-townhouse-hero.png', alt: 'ABS Properties in Oldham'}],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'ABS Properties',
     description: 'Sales, lettings and property management in Oldham and Greater Manchester.',
+    images: ['/images/abs-townhouse-hero.png'],
   },
   robots: process.env.NODE_ENV === 'production' ? { index: true, follow: true } : { index: false, follow: false },
 };

@@ -5,7 +5,7 @@ import {HomeSearch} from '@/components/HomeSearch';
 import {getProperties} from '@/lib/properties';
 import {PropertyCard} from '@/components/PropertyCard';
 
-export const metadata: Metadata = {title: 'ABS Properties | Estate Agents and Letting Agents in Oldham', description: 'ABS Properties offers property sales, lettings and property management across Oldham and Greater Manchester.', keywords: ['estate agents Oldham', 'letting agents Oldham', 'property management Oldham', 'ABS Properties']};
+export const metadata: Metadata = {title: {absolute:'ABS Properties | Estate Agents and Letting Agents in Oldham'}, description: 'ABS Properties offers property sales, lettings and property management across Oldham and Greater Manchester.', alternates:{canonical:'/'}, keywords: ['estate agents Oldham', 'letting agents Oldham', 'property management Oldham', 'ABS Properties']};
 
 export default async function Home() {
   const properties = (await getProperties()).filter(property => property.published && !property.demo);

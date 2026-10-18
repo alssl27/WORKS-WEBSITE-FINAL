@@ -3,7 +3,7 @@ import Link from 'next/link';
 import {PageIntro} from '@/components/PageIntro';
 import {LandlordTools} from '@/components/LandlordTools';
 
-export const metadata = {title:'Landlord tools & rental income calculator',description:'Estimate rental income, gross and net operating yields, compare rent affordability and plan maintenance budgets with ABS Properties landlord tools.'};
+export const metadata = {title:'Landlord tools & rental income calculator',description:'Estimate rental income, gross and net operating yields, compare rent affordability and plan maintenance budgets with ABS Properties landlord tools.',alternates:{canonical:'/landlords/tools'}};
 
 export default async function LandlordToolsPage({searchParams}:{searchParams:Promise<{tool?:string|string[]}>}) {
   const {tool} = await searchParams;

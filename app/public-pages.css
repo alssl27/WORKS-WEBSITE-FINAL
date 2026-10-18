@@ -104,6 +104,7 @@ body{font-weight:400;letter-spacing:-.008em;line-height:1.6}
 @media(max-width:820px){.site-header .header-logo span{margin-top:18px;font-size:12px;letter-spacing:.12em}}
 
 /* Demonstration-ready interaction and accessibility polish. */
+.admin-password-field{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}.password-input input{min-width:0}
 :root{scrollbar-color:#8290a3 #eef2f6;scrollbar-width:thin}
 *::-webkit-scrollbar{width:11px;height:11px}
 *::-webkit-scrollbar-track{background:#eef2f6}

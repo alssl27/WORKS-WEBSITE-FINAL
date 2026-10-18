@@ -2,6 +2,7 @@
 
 import {useState} from 'react';
 import {useRouter} from 'next/navigation';
+import Image from 'next/image';
 import type {Property} from '@/lib/property-schema';
 
 const list = (value: string) => value.split(/\r?\n|,/).map(item => item.trim()).filter(Boolean);
@@ -62,7 +63,7 @@ export function AdminPropertyForm({property}: {property?: Property}) {
       <label className="full">Material information<textarea name="materialInformation" rows={4} defaultValue={value('materialInformation')}/></label>
     </div>
     <section className="admin-images" aria-labelledby="images-heading"><h2 id="images-heading">Images</h2><p className="muted">Use a file already stored in <code>public/images</code> and describe what the photograph shows.</p>
-      <div className="admin-image-list">{images.map((image,index)=><article key={`${image.src}-${index}`}><img src={image.src} alt={image.alt}/><strong>{image.alt}</strong><code>{image.src}</code><button type="button" aria-label={`Remove ${image.alt}`} onClick={()=>setImages(current=>current.filter((_,itemIndex)=>itemIndex!==index))}>Remove</button></article>)}</div>
+      <div className="admin-image-list">{images.map((image,index)=><article key={`${image.src}-${index}`}><Image src={image.src} alt={image.alt} width={320} height={208} sizes="180px"/><strong>{image.alt}</strong><code>{image.src}</code><button type="button" aria-label={`Remove ${image.alt}`} onClick={()=>setImages(current=>current.filter((_,itemIndex)=>itemIndex!==index))}>Remove</button></article>)}</div>
       <div className="admin-image-entry"><label>Image path<input value={imageSrc} onChange={event=>setImageSrc(event.target.value)} placeholder="/images/property-front.jpg"/></label><label>Image description<input value={imageAlt} onChange={event=>setImageAlt(event.target.value)} placeholder="Front of the property"/></label><button type="button" className="button outline" onClick={addImage}>Add image</button></div>
     </section>
     {error&&<p className="form-error" role="alert">{error}</p>}

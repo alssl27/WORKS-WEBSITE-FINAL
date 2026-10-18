@@ -10,7 +10,7 @@ export function PageIntro({title,children,image=pageMedia.home,eyebrow='ABS Prop
         <p className="eyebrow">{eyebrow}</p><h1>{title}</h1>
         {children && <div className="intro-copy">{children}</div>}
       </div>
-      <figure className="visual-intro-media"><Image src={image.src} alt={image.alt} fill sizes="(max-width: 760px) 100vw, 46vw"/>{image.caption && <figcaption>{image.caption}</figcaption>}</figure>
+      <figure className="visual-intro-media"><Image src={image.src} alt={image.alt} fill sizes="(max-width: 760px) 100vw, 46vw" preload/>{image.caption && <figcaption>{image.caption}</figcaption>}</figure>
     </div>
   </section>;
 }
