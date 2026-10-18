@@ -38,10 +38,12 @@ export type Property = z.infer<typeof propertySchema>;
 export type PropertyFilter = {category?:string;q?:string;bedrooms?:string;maxPrice?:string};
 export function filterProperties(properties: Property[], filter: PropertyFilter) {
   const query = (filter.q || '').trim().toLowerCase();
+  const postcodeQuery = query.replace(/\s+/g, '');
   const beds = /^\d+$/.test(filter.bedrooms || '') ? Number(filter.bedrooms) : 0;
   const max = /^\d+(\.\d{1,2})?$/.test(filter.maxPrice || '') ? Number(filter.maxPrice) : Infinity;
   return properties.filter(p => (!filter.category || p.category === filter.category)
-    && (!query || `${p.title} ${p.area} ${p.postcode}`.toLowerCase().includes(query))
+    && (!query || `${p.title} ${p.area} ${p.postcode}`.toLowerCase().includes(query)
+      || p.postcode.toLowerCase().replace(/\s+/g, '').includes(postcodeQuery))
     && (!beds || (p.bedrooms !== null && p.bedrooms >= beds))
     && (max === Infinity || (p.price !== null && p.price <= max)));
 }

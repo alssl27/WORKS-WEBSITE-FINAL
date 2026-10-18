@@ -4,6 +4,8 @@ import {Footer} from '@/components/Footer';
 import {WhatsAppButton} from '@/components/WhatsAppButton';
 import {site} from '@/lib/site';
 import './globals.css';
+import './redesign.css';
+import './public-pages.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
