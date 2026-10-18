@@ -9,12 +9,13 @@ export const pageMedia = {
   family: {src:'/images/brand-home.png',alt:'Illustration of a family arriving at a home with an ABS Properties To Let sign'},
   bungalow: {src:'/images/fairfields-exterior.png',alt:'Front garden and exterior of our Fairfields bungalow in Oldham'},
   street: {src:'/images/retford-street.png',alt:'Terraced houses on Retford Street in Oldham',caption:'Homes from our Oldham property portfolio.'},
+  townCentre: {src:'/images/oldham-town-centre-golden-hour.png',alt:'Oldham town centre and surrounding skyline at golden hour'},
 } satisfies Record<string,PageImage>;
 
 export const serviceMedia:Record<string,PageImage> = {
   lettings:pageMedia.living,
   management:pageMedia.kitchen,
-  sales:pageMedia.exterior,
+  sales:pageMedia.townCentre,
   commercial:pageMedia.home,
   investments:pageMedia.street,
 };
