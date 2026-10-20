@@ -14,7 +14,7 @@ export default async function Home() {
     <section className="hero" aria-labelledby="hero-title">
       <div className="hero-media"><Image src="/images/abs-family-home-hero.png" alt="A family arriving at a British home beside an ABS Properties sign" fill sizes="100vw" priority/><div className="hero-overlay"/></div>
       <div className="hero-copy"><h1 id="hero-title">Your property,<br/>our priority.</h1><p>Sales, lettings and property management in Oldham.</p><div className="button-row hero-actions"><Link href="/properties" className="button">Find a property <span aria-hidden="true">›</span></Link><Link href="/valuation" className="button outline light">Book a valuation <span aria-hidden="true">›</span></Link></div></div>
-      <div className="hero-search"><HomeSearch/></div>
+      <div className="hero-search"><HomeSearch defaultCategory="rent"/></div>
     </section>
     <section className="landlord-confidence" aria-labelledby="landlord-heading"><div className="container landlord-confidence-grid">
       <div className="landlord-confidence-copy"><h2 id="landlord-heading">Let your property with confidence.</h2><p>Whether you’re a first-time landlord or have a growing portfolio, we provide reliable, professional services with clear pricing and honest advice.</p><Link href="/landlords" className="text-link">Explore landlord services <span aria-hidden="true">›</span></Link></div>
