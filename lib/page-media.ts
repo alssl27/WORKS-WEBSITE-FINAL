@@ -1,16 +1,21 @@
 export type PageImage = {src:string;alt:string;caption?:string};
 
+const pagePlaceholder:PageImage = {
+  src:'/images/page-placeholder.svg',
+  alt:'ABS Properties image placeholder',
+};
+
 export const pageMedia = {
-  home: {src:'/images/abs-townhouse-hero.png',alt:'Victorian townhouse and ABS Properties sign'},
-  exterior: {src:'/images/roundthorn-exterior.png',alt:'Red-brick frontage of our Roundthorn Road property in Oldham'},
-  garden: {src:'/images/fairfields-garden.png',alt:'Garden at our Fairfields property in Oldham',caption:'A garden from our Oldham property portfolio.'},
-  living: {src:'/images/roundthorn-living-room.png',alt:'Bright living room at our Roundthorn Road property'},
-  kitchen: {src:'/images/fairfields-kitchen-1.png',alt:'Fitted kitchen at our Fairfields property'},
-  family: {src:'/images/brand-home.png',alt:'Illustration of a family arriving at a home with an ABS Properties To Let sign'},
-  bungalow: {src:'/images/fairfields-exterior.png',alt:'Front garden and exterior of our Fairfields bungalow in Oldham'},
-  street: {src:'/images/retford-street.png',alt:'Terraced houses on Retford Street in Oldham',caption:'Homes from our Oldham property portfolio.'},
-  townCentre: {src:'/images/oldham-town-centre-golden-hour.png',alt:'Oldham town centre and surrounding skyline at golden hour'},
-  welcomingFamily: {src:'/images/welcoming-family-home-to-let.png',alt:'Family arriving at a welcoming home beside an ABS Properties To Let sign'},
+  home: pagePlaceholder,
+  exterior: pagePlaceholder,
+  garden: pagePlaceholder,
+  living: pagePlaceholder,
+  kitchen: pagePlaceholder,
+  family: pagePlaceholder,
+  bungalow: pagePlaceholder,
+  street: pagePlaceholder,
+  townCentre: pagePlaceholder,
+  welcomingFamily: pagePlaceholder,
 } satisfies Record<string,PageImage>;
 
 export const serviceMedia:Record<string,PageImage> = {

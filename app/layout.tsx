@@ -2,12 +2,13 @@ import type {Metadata, Viewport} from 'next';
 import {Geist, Newsreader} from 'next/font/google';
 import {Header} from '@/components/Header';
 import {Footer} from '@/components/Footer';
-import {WhatsAppButton} from '@/components/WhatsAppButton';
 import {isPublicProductionSite, site} from '@/lib/site';
 import './globals.css';
 import './redesign.css';
 import './public-pages.css';
 import './typography.css';
+import './internal-pages.css';
+import './home-reference.css';
 
 const geist = Geist({
   subsets: ['latin'],
@@ -88,4 +89,4 @@ const businessSchema = {
   areaServed: ['Oldham', 'Greater Manchester'],
 };
 
-export default function Layout({children}:{children:React.ReactNode}){return <html lang="en-GB" data-scroll-behavior="smooth" className={`${geist.variable} ${newsreader.variable}`}><body><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(businessSchema)}}/><a href="#main" className="skip-link">Skip to content</a><Header/><main id="main">{children}</main><Footer/><WhatsAppButton/></body></html>}
+export default function Layout({children}:{children:React.ReactNode}){return <html lang="en-GB" data-scroll-behavior="smooth" className={`${geist.variable} ${newsreader.variable}`}><body><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(businessSchema)}}/><a href="#main" className="skip-link">Skip to content</a><Header/><main id="main">{children}</main><Footer/></body></html>}

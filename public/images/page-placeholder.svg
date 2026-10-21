@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title description">
+  <title id="title">ABS Properties image placeholder</title>
+  <desc id="description">A neutral navy background with a simple outline of a house and the ABS Properties name.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071b36"/>
+      <stop offset="1" stop-color="#243d66"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#background)"/>
+  <g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" opacity=".72">
+    <path d="M650 430 800 305l150 125v185H650Z" stroke-width="14"/>
+    <path d="M745 615V495h110v120" stroke-width="12"/>
+  </g>
+  <rect x="760" y="354" width="80" height="8" rx="4" fill="#d50920"/>
+  <text x="800" y="700" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700" letter-spacing="9" text-anchor="middle">ABS PROPERTIES</text>
+  <text x="800" y="754" fill="#c9d2df" font-family="Arial, Helvetica, sans-serif" font-size="22" letter-spacing="5" text-anchor="middle">IMAGE PLACEHOLDER</text>
+</svg>
