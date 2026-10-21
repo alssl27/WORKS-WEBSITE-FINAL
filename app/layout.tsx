@@ -1,12 +1,35 @@
-import type {Metadata} from 'next';
+import type {Metadata, Viewport} from 'next';
+import {Geist, Newsreader} from 'next/font/google';
 import {Header} from '@/components/Header';
 import {Footer} from '@/components/Footer';
-import {WhatsAppButton} from '@/components/WhatsAppButton';
-import {site} from '@/lib/site';
+import {isPublicProductionSite, site} from '@/lib/site';
 import './globals.css';
+import './redesign.css';
+import './public-pages.css';
+import './typography.css';
+import './internal-pages.css';
+import './home-reference.css';
+
+const geist = Geist({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-geist',
+});
+
+const newsreader = Newsreader({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-newsreader',
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
+  applicationName: site.name,
+  category: 'real estate',
+  creator: site.name,
+  publisher: site.name,
+  manifest: '/manifest.webmanifest',
+  formatDetection: {address: false, email: false, telephone: false},
   title: {
     default: 'ABS Properties | Estate Agents, Lettings & Property Management in Oldham',
     template: '%s | ABS Properties',
@@ -21,7 +44,10 @@ export const metadata: Metadata = {
     'Greater Manchester estate agents',
     'ABS Properties',
   ],
-  alternates: { canonical: '/' },
+  icons: {
+    icon: '/images/abs-properties-logo.png',
+    apple: '/images/abs-properties-logo.png',
+  },
   openGraph: {
     title: 'ABS Properties',
     description: 'Sales, lettings and property management in Oldham and Greater Manchester.',
@@ -29,13 +55,20 @@ export const metadata: Metadata = {
     siteName: 'ABS Properties',
     locale: 'en_GB',
     type: 'website',
+    images: [{url: '/images/abs-townhouse-hero.png', alt: 'ABS Properties in Oldham'}],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'ABS Properties',
     description: 'Sales, lettings and property management in Oldham and Greater Manchester.',
+    images: ['/images/abs-townhouse-hero.png'],
   },
-  robots: process.env.NODE_ENV === 'production' ? { index: true, follow: true } : { index: false, follow: false },
+  robots: isPublicProductionSite() ? {index: true, follow: true} : {index: false, follow: false},
+};
+
+export const viewport: Viewport = {
+  colorScheme: 'light',
+  themeColor: '#071b36',
 };
 
 const businessSchema = {
@@ -56,4 +89,4 @@ const businessSchema = {
   areaServed: ['Oldham', 'Greater Manchester'],
 };
 
-export default function Layout({children}:{children:React.ReactNode}){return <html lang="en-GB" data-scroll-behavior="smooth"><body><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(businessSchema)}}/><a href="#main" className="skip-link">Skip to content</a><Header/><main id="main">{children}</main><Footer/><WhatsAppButton/></body></html>}
+export default function Layout({children}:{children:React.ReactNode}){return <html lang="en-GB" data-scroll-behavior="smooth" className={`${geist.variable} ${newsreader.variable}`}><body><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(businessSchema)}}/><a href="#main" className="skip-link">Skip to content</a><Header/><main id="main">{children}</main><Footer/></body></html>}

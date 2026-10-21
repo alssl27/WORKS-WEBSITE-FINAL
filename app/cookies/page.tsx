@@ -1,4 +1,4 @@
 import {pageMedia} from '@/lib/page-media';
 import {PageIntro} from '@/components/PageIntro';
-export const metadata={title:'Cookie information'};
+export const metadata={title:'Cookie information',alternates:{canonical:'/cookies'}};
 export default function Cookies(){return <><PageIntro image={pageMedia.home} eyebrow="Your website preferences" compact title="Cookie information"/><article className="container section reading-width"><h2>This website build</h2><p>No advertising, analytics scripts or embedded social media are included. Map and WhatsApp links open external services only when selected.</p><h2>Security checks</h2><p>When configured, enquiry forms use Cloudflare Turnstile for spam prevention. Review the widget’s final settings and provider documentation before launch to confirm the information processed and any cookies used.</p><h2>Future changes</h2><p>If ABS Properties adds analytics or other optional tracking, update this notice and implement any required consent controls before enabling them.</p><div className="notice">This information needs to be checked against the final hosting and form configuration before public launch.</div></article></>}

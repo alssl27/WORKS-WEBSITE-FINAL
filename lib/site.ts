@@ -11,6 +11,17 @@ export const site = {
   url: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
   social: { linkedin: '', facebook: '', instagram: '' },
 };
+
+export function isPublicProductionSite() {
+  if (process.env.NODE_ENV !== 'production') return false;
+  try {
+    const url = new URL(site.url);
+    return url.protocol === 'https:' && !['localhost', '127.0.0.1'].includes(url.hostname);
+  } catch {
+    return false;
+  }
+}
+
 export function whatsappLink(message = 'Hello ABS Properties, I would like to discuss your property services.') {
   return `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(message)}`;
 }
